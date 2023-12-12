@@ -1,5 +1,33 @@
 # Project-2
 
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test Sample](#test-sample)
+- [Credits](#credits)
+- [License](#license)
+
+## Description
+
+A web application that allows users to plan, track, and manage their garden. Users can sign up, log in, add details about their crops, track planting schedules, and get reminders for watering and harvesting.
+
+## Installation
+
+## Usage
+
+### Test Sample
+
+### Credits
+
+### License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
+
 Technical Acceptance Criteria: 25%
 Satisfies the following code requirements:
 Application uses a Node.js and Express.js back end and uses both GET and POST routes for retrieving and adding new data. -- GET USER PROFILES, POST TIPS/COMMENTS ON HOMEPAGE
