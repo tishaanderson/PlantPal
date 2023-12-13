@@ -1,5 +1,8 @@
+const Category = require('./Category');
+const Plants = require('./Plants');
 const User = require('./User');
-const Project = require('./Project');
+const UserPlants = require('./UserPlants')
+
 
 User.hasMany(Project, {
   foreignKey: 'user_id',
