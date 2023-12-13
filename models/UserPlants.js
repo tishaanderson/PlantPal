@@ -19,6 +19,13 @@ UserPlants.init(
     care_reminders: {
       type: DataTypes.JSON,
     },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id'
+      }
+    }
   },
   {
     sequelize,
