@@ -27,13 +27,9 @@ Plants.init(
     image_url: {
       type: DataTypes.STRING,
     },
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'Category',
-        key: 'id',
+    category: {
+      type: DataTypes.STRING,
       },
-    },
   },
   {
     sequelize,
