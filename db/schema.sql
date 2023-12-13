@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS plantPal_db;
+CREATE DATABASE plantPal_db;
