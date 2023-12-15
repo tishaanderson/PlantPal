@@ -1,44 +1,44 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Plant, User, UserPlants } = require('../models');
 // const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
-    // const projectData = await Project.findAll({
-    //   include: [
-    //     {
-    //       model: User,
-    //       attributes: ['name'],
-    //     },
-    //   ],
-    // });
+    // Get all plants and JOIN with user data
+    const plantData = await Plant.findAll({
+      // include: [
+      //   {
+      //     model: User,
+      //     attributes: ['plant_name'],
+      //   },
+      // ],
+    });
 
     // Serialize data so the template can read it
-    // const projects = projectData.map((project) => project.get({ plain: true }));
+    const plants = plantData.map((plant) => plant.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage');
+    res.render('homepage', { plants });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get('/project/:id', async (req, res) => {
+router.get('/plant/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+    const plantData = await Plant.findByPk(req.params.id, {
+      // include: [
+      //   {
+      //     model: User,
+      //     attributes: ['name'],
+      //   },
+      // ],
     });
 
-    const project = projectData.get({ plain: true });
+    const plant = plantData.get({ plain: true });
 
-    res.render('project', {
-      ...project,
+    res.render('plant', {
+      ...plant,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -52,7 +52,7 @@ router.get('/profile', async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: UserPlants }],
     });
 
     const user = userData.get({ plain: true });
