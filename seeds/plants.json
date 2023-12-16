@@ -1,0 +1,59 @@
+[
+    {
+        "plant_name": "a",
+        "description": "sdfs",
+        "sunlight_requirements": "sd",
+        "watering_needs": "sdf",
+        "image_url":"sdf",
+        "category": "sdf"
+    },
+    {
+        "plant_name": "ff",
+        "description": "ff",
+        "sunlight_requirements": "dsa",
+        "watering_needs": "vcx",
+        "image_url":"tgbsf",
+        "category": "fghgf"
+    },
+    {
+        "plant_name": "",
+        "description": "",
+        "sunlight_requirements": "",
+        "watering_needs": "",
+        "image_url":"",
+        "category": ""
+    },
+    {
+        "plant_name": "",
+        "description": "",
+        "sunlight_requirements": "",
+        "watering_needs": "",
+        "image_url":"",
+        "category": ""
+    },
+    {
+        "plant_name": "",
+        "description": "",
+        "sunlight_requirements": "",
+        "watering_needs": "",
+        "image_url":"",
+        "category": ""
+    }, 
+    {
+        "plant_name": "",
+        "description": "",
+        "sunlight_requirements": "",
+        "watering_needs": "",
+        "image_url":"",
+        "category": ""
+    },
+    {
+        "plant_name": "",
+        "description": "",
+        "sunlight_requirements": "",
+        "watering_needs": "",
+        "image_url":"",
+        "category": ""
+    }
+
+]
