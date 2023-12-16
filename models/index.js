@@ -3,9 +3,9 @@ const User = require('./User');
 const UserPlants = require('./UserPlants')
 
 
-User.hasMany(UserPlants, {
+User.belongsToMany(Plant, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  through: UserPlants
 });
 
 UserPlants.belongsTo(User, {

@@ -4,8 +4,9 @@
   "description": "Create a web application that allows users to plan, track, and manage their garden. Users can sign up, log in, add details about their crops, track planting schedules, and get reminders for watering and harvesting.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+   "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",

@@ -5,6 +5,7 @@ const Plant = require('./Plant')
 
 class UserPlants extends Model {}
 
+//written incorrectly, tie in favorited plates
 UserPlants.init(
   {
     id: {
@@ -25,8 +26,16 @@ UserPlants.init(
         model: 'user',
         key: 'id'
       }
-    }
+    }, 
+    plant_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'plants',
+        key: 'id'
+      }
+    },
   },
+  //
   {
     sequelize,
     timestamps: false,
