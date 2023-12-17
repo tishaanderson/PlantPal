@@ -1,3 +1,36 @@
-{{#each plants as |plant|}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Pal</title>
+</head>
+
+<body>
+    <div class="flex column justify-space-around">
+        <header class="display-flex justify-space-between align-center p-2">
+            <h1>Plant Pal</h1>
+        </header>
+        <main class="container container-fluid mt-5">
+            <ul>
+                {{#each plants as |plant|}}
+                <h2>{{plant.plant_name}}</h2>
+                {{#if image_url}}
+                <img src="{{plant.image_url}}" alt="{{plant.plant_name}}" />
+                {{/if}}
+                <p>Description: {{plant.description}}</p>
+                <p>Sunlight Requirements: {{plant.sunlight_requirements}}</p>
+                <p>Watering Needs: {{plant.watering_needs}}</p>
+                <p>Category: {{plant.category}}</p>
+                {{/each}}
+            </ul>
+        </main>
+    </div>
+</body>
+
+</html>
+
+{{!-- {{#each plants as |plant|}}
 <h4>{{plant.plant_name}}</h4>
-{{/each}}
+{{/each}} --}}
