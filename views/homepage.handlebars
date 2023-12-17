@@ -1,3 +1,16 @@
+{{#each plants}}
+<div class="plant">
+    <h1>{{plant_name}}</h1>
+    <p class="midlaner">{{description}}</p>
+    <p class="toplaner">{{sunlight_requirements}}</p>
+    <p class="midlaner">{{watering_needs}}</p>
+    <p class="toplaner">{{image_url}}</p>
+    <p class="midlaner">{{category}}</p>
+</div>
+{{/each}}
+
+
+{{!-- 
 {{#each plants as |plant|}}
 <h4>{{plant.plant_name}}</h4>
-{{/each}}
+{{/each}} --}}

@@ -1,0 +1,18 @@
+body {
+    background-image: url("../background.jpg");
+  }
+
+li{
+    font-size: 2rem;
+    width: 300px;
+    list-style: none;
+    max-width: 4px;
+}
+
+.midlaner {
+    background-color: blueviolet;
+}
+
+.toplaner {
+    background-color: rgb(226, 43, 43);
+}
