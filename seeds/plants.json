@@ -1,0 +1,59 @@
+[
+    {
+        "plant_name": "Lantana",
+        "description": "This plant produces clusters of brightly colored flowers that bloom from spring through fall and is available in a variety of colors, including yellow, orange, pink, and purple. Lantana is a low-maintenance plant that requires little water and is an excellent choice for borders, mass plantings, or container gardens.",
+        "sunlight_requirements": "Can handle heat and drought, good to leave in the sun.",
+        "watering_needs": "Requires litte water",
+        "image_url":"https://cflandscapes.com/wp-content/uploads/2023/03/Shazam_Lantana_1_BB.jpg",
+        "category": "Outdoor plant"
+    },
+    {
+        "plant_name": "Salvia",
+        "description": "Salvia farinacea is a gorgeous Texas native plant that is easy to grow, attracts hummingbirds and butterflies, and is exceeding drought-tolerant.",
+        "sunlight_requirements": "Extremely heat and drought resistant, safe to leave in the sun.",
+        "watering_needs": "Requires litte watering.",
+        "image_url":"https://www.bhg.com/thmb/qicAR9U_0RG_n6sHjY1CwGvvUB0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/blue-salvia-farinacea-flower-5ae768d5-b67a32bbff9943f4acb14cb3e4766aa7.jpg",
+        "category": "Outdoor plant"
+    },
+    {
+        "plant_name": "Rockrose",
+        "description": "Rockrose can be described as a Texas hibiscus. The deep pink, papery blooms open wide in the morning and close later in the day to keep it protected from the heat. ",
+        "sunlight_requirements": "Full sun, partial shade",
+        "watering_needs": "Low watering needs",
+        "image_url":"https://lawnlove.com/blog/wp-content/uploads/2021/08/rsz_27231550365_aa2e0e707e_c.jpg",
+        "category": "Outdoor Shrub"
+    },
+    {
+        "plant_name": "Texas Sage",
+        "description": "Texas sage is a tough, drought-tolerant plant that produces fragrant purple flowers throughout the summer. This plant requires full sun and well-draining soil and is an excellent choice for a xeriscape garden or as a low hedge or screen.",
+        "sunlight_requirements": "Full sun",
+        "watering_needs": "Very little",
+        "image_url":"https://cflandscapes.com/wp-content/uploads/2023/03/texas-sage-bush-1024x768.jpg",
+        "category": "Outdoor Shrub"
+    },
+    {
+        "plant_name": " Autumn Sage",
+        "description": "Salvia greggii, this perennial is native to southwest Texas and Mexico. You may have spotted it growing on the side of the highway. The soft shrub has a minty aromatic leaf and grows to about two to three feet tall. Autumn sage blooms in colors like red, purple, orange and white.",
+        "sunlight_requirements": "Full sun, partial shade",
+        "watering_needs": "Water once a week",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnIDU6KTWew3ptsz5WLe77BrGUZuXHUbpdnwcOTvgO_a8EcU_33kH33OOWrA&s",
+        "category": "Outdoor Shrub"
+    }, 
+    {
+        "plant_name": "Hibiscus",
+        "description": "This fantastic plant blooms throughout the year, showing off its stunning flowers throughout the four seasons. Hibiscus plants are very versatile and can be planted in spacious gardens, small window planters, or hanging pots. These plants are known to attract butterflies, bees, and hummingbirds, which is great for pollenating the rest of your blooming garden.",
+        "sunlight_requirements": "Full sun, partial shade",
+        "watering_needs": "Water once a week",
+        "image_url":"https://www.thelokengroup.com/site/wp-content/uploads/2022/03/Hibiscus-Texas-Flower-scaled.jpg",
+        "category": "Indoor or Garden plant"
+    },
+    {
+        "plant_name": "Cacti and Succulents",
+        "description": "These plants come in a variety of sizes and shapes, from small and compact to large and sprawling. Some popular varieties for Texas landscaping include barrel cactus, prickly pear cactus, and agave. These plants require little maintenance and can add a unique and striking element to your landscape design.",
+        "sunlight_requirements": "Full sun",
+        "watering_needs": "Little watering",
+        "image_url":"https://aggie-hort.tamu.edu/newsletters/hortupdate/hortupdate_archives/2003/may03/cactus1.jpg",
+        "category": "Indoor or Outdoor"
+    }
+
+]
