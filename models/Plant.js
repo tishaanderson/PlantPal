@@ -16,7 +16,7 @@ Plant.init(
       allowNull: false,
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     sunlight_requirements: {
       type: DataTypes.STRING,

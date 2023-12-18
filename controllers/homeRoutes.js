@@ -1,18 +1,11 @@
 const router = require('express').Router();
 const { Plant, User, UserPlants } = require('../models');
-// const withAuth = require('../utils/auth');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
     // Get all plants and JOIN with user data
-    const plantData = await Plant.findAll({
-      // include: [
-      //   {
-      //     model: User,
-      //     attributes: ['plant_name'],
-      //   },
-      // ],
-    });
+    const plantData = await Plant.findAll();
 
     // Serialize data so the template can read it
     const plants = plantData.map((plant) => plant.get({ plain: true }));
@@ -26,14 +19,7 @@ console.log(plants);
 
 router.get('/plant/:id', async (req, res) => {
   try {
-    const plantData = await Plant.findByPk(req.params.id, {
-      // include: [
-      //   {
-      //     model: User,
-      //     attributes: ['name'],
-      //   },
-      // ],
-    });
+    const plantData = await Plant.findByPk(req.params.id);
 
     const plant = plantData.get({ plain: true });
 
@@ -68,10 +54,10 @@ router.get('/profile', async (req, res) => {
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  // if (req.session.logged_in) {
-  //   res.redirect('/profile');
-  //   return;
-  // }
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
 
   res.render('login');
 });
