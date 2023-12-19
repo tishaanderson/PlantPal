@@ -21,6 +21,8 @@ A web application that allows users to plan, track, and manage their garden. Use
 
 ### Credits
 
+[Colorlib](https://colorlib.com/wp/free-bootstrap-registration-forms/)
+
 ### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
