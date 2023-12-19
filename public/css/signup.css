@@ -1,3 +1,4 @@
+
 /*--
 Author: Colorlib
 Author URL: https://colorlib.com
@@ -377,11 +378,11 @@ input.checkbox:checked:after {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.15);
   bottom: -160px;
-  -webkit-animation: square 20s infinite;
-  -moz-animation: square 250s infinite;
-  -o-animation: square 20s infinite;
-  -ms-animation: square 20s infinite;
-  animation: square 20s infinite;
+  -webkit-animation: square 1s 1;
+  -moz-animation: square 1s 1;
+  -o-animation: square 1s 1;
+  -ms-animation: square 1s 1;
+  animation: square 1s 1;
   -webkit-transition-timing-function: linear;
   -moz-transition-timing-function: linear;
   -o-transition-timing-function: linear;
@@ -516,7 +517,15 @@ input.checkbox:checked:after {
     -moz-transform: translateY(0);
     -o-transform: translateY(0);
     -ms-transform: translateY(0);
-    transform: translateY(0);
+    transform: translateY(0) rotate(0deg);
+  }
+
+  49.99% {
+    transform: translateY(-350px) rotate(180deg);
+  }
+
+  50% {
+    transform: translateY(-350px) rotate(180deg);
   }
 
   100% {
@@ -524,7 +533,7 @@ input.checkbox:checked:after {
     -moz-transform: translateY(-700px) rotate(600deg);
     -o-transform: translateY(-700px) rotate(600deg);
     -ms-transform: translateY(-700px) rotate(600deg);
-    transform: translateY(-700px) rotate(600deg);
+    transform: translateY(-350px) rotate(180deg);
   }
 }
 
