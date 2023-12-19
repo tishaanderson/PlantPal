@@ -1,4 +1,11 @@
 body {
-background-image: url("../images/project2background.jpg");
+background-image: url("../images/flower.png");
+background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
+/* 
+.container {
+  width: 50%;
+} */
