@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+// const withAuth = require('../../utils/auth');
+
 
 // GET all users
 router.get('/', async (req, res) => {
@@ -20,7 +22,7 @@ router.post('/', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
       console.log(req.body)
-
+      
       res.status(200).json(userData);
     });
   } catch (err) {
@@ -86,17 +88,17 @@ router.post('/login', async (req, res) => {
 
     if (!userData) { 
       res
-        .status(400)
+      .status(400)
         .json({ message: 'Incorrect email or password, please try again' });
       return;
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
-
+    
     if (!validPassword) {
       res
-        .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+      .status(400)
+      .json({ message: 'Incorrect email or password, please try again' });
       return;
     }
 
@@ -106,7 +108,7 @@ router.post('/login', async (req, res) => {
       
       res.json({ user: userData, message: 'You are now logged in!' });
     });
-
+    
   } catch (err) {
     res.status(400).json(err);
   }
@@ -122,5 +124,27 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
+
+// //Route to add a plant to the user's profile
+// router.post('/api/user/plants/add', async (req, res) => {
+//   try {
+//     //Get plant_id from the form data
+//     const { plant_id } = req.body;
+
+//     //Get the user_id from the session
+//     const user_id = req.session.user_id;
+
+//     //Add the plant to the user's profile
+//     await UserPlants.create({
+//       user_id,
+//       plant_id,
+//     });
+
+//     res.status(200).json({ message: 'Plant added to profile successfully!' });
+//   } catch (err) {
+//     console.error('Error adding plant to profile:', err);
+//     res.status(500).json({ error: 'Internal Server Error'});
+//   }
+// });
 
 module.exports = router;
