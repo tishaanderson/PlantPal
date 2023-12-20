@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Details</title>
-</head>
-
-<body>
-    <h1>{{plant.plant_name}}</h1>
-    <a>
-        <img src="{{plant.image_url}}" class="img-fluid rounded-start" alt="{{plant.plant_name}}" />
-    </a>
-    <p class="card-text">Description: {{plant.description}}</p>
-    <p class="card-text">Sunlight Requirements: {{plant.sunlight_requirements}}</p>
-    <p class="card-text">Watering Needs: {{plant.watering_needs}}</p>
-    <p class="card-text"><small class="text-body-secondary">Category: {{plant.category}}</small></p>
-    {{!-- <form action="/api/user/plants/add" method="POST">
-        <input type="hidden" name="plant_id" value="{{id}}">
-        <button type="submit">Add {{plant.plant_name}} to My Garden</button>
-    </form> --}}
-</body>
-
-</html>
+<header>
+    <h1>More about {{plant.plant_name}}</h1>
+</header>
+<a>
+    <img src="{{plant.image_url}}" class="img-fluid rounded-start" alt="{{plant.plant_name}}" />
+</a>
+<p class="card-text">Description: {{plant.description}}</p>
+<p class="card-text">Sunlight Requirements: {{plant.sunlight_requirements}}</p>
+<p class="card-text">Watering Needs: {{plant.watering_needs}}</p>
+<p class="card-text"><small class="text-body-secondary">Category: {{plant.category}}</small></p>

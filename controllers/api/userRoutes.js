@@ -1,7 +1,5 @@
 const router = require('express').Router();
 const { User } = require('../../models');
-// const withAuth = require('../../utils/auth');
-
 
 // GET all users
 router.get('/', async (req, res) => {
@@ -124,27 +122,5 @@ router.post('/logout', (req, res) => {
     res.status(404).end();
   }
 });
-
-// //Route to add a plant to the user's profile
-// router.post('/api/user/plants/add', async (req, res) => {
-//   try {
-//     //Get plant_id from the form data
-//     const { plant_id } = req.body;
-
-//     //Get the user_id from the session
-//     const user_id = req.session.user_id;
-
-//     //Add the plant to the user's profile
-//     await UserPlants.create({
-//       user_id,
-//       plant_id,
-//     });
-
-//     res.status(200).json({ message: 'Plant added to profile successfully!' });
-//   } catch (err) {
-//     console.error('Error adding plant to profile:', err);
-//     res.status(500).json({ error: 'Internal Server Error'});
-//   }
-// });
 
 module.exports = router;
