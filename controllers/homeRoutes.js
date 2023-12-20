@@ -21,11 +21,16 @@ router.get('/plant/:id', async (req, res) => {
   try {
     const plantData = await Plant.findByPk(req.params.id);
 
+    if (!plantData) {
+      res.status(404).json({ message: 'Plant not found'});
+      return;
+    }
+
     const plant = plantData.get({ plain: true });
 
     res.render('plant', {
-      ...plant,
-      logged_in: req.session.logged_in
+      // ...plant,
+      // logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
