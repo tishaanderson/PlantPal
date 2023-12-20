@@ -5,3 +5,16 @@ background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 4px 4px 8px #dcb50a8d;
+}
+
+.card-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
