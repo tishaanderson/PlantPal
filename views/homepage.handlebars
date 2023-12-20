@@ -1,4 +1,23 @@
+{{#> layout}}
+  <link rel="stylesheet" href="./css/homepage.css ">
+{{/layout}}
+
 <div class="row">
+  {{#each plants as |plant|}}
+    <div class="col-md-6 col-sm-12">
+      <div class="plant-container" >
+        <h3 class="plant-title" style="text-align: center;">{{plant.plant_name}}</h3>
+        <a href="/plant/{{plant.id}}" style="display: flex; align-items: center; justify-content: center;" >
+          <img src="{{plant.image_url}}" class="img-fluid plant-image" alt="{{plant.plant_name}}"/>
+        </a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+
+
+
+{{!-- <div class="row">
   {{#each plants as |plant|}}
     <div class="col-md-6 col-sm-12">
       <div class="card mb-3" style="background-color: transparent; border: none;">
@@ -19,4 +38,4 @@
   </div>
 
   {{/each}}
-</div>
+</div> --}}
