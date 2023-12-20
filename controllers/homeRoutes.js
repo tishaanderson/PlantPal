@@ -28,7 +28,7 @@ router.get('/plant/:id', async (req, res) => {
 
     const plant = plantData.get({ plain: true });
 
-    res.render('plant', {
+    res.render('plant',  { plant
       // ...plant,
       // logged_in: req.session.logged_in
     });
