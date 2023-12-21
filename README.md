@@ -11,7 +11,17 @@
 
 ## Description
 
-A web application that allows users to plan, track, and manage their garden. Users can sign up, log in, add details about their crops, track planting schedules, and get reminders for watering and harvesting.
+A simple web application tailored for Texas gardening enthusiasts, offering a user-friendly platform to streamline garden planning, organization, and plant care. 
+
+With a few clicks, users can explore detailed information about specific plants, including care requirements and ideal watering schedules (planting and harvesting schedules coming soon!). 
+
+Plant Pal aims to empower users to effectively manage their garden by offering features like personalized plant tracking and timely reminders for watering/harvesting. Our platform is designed to be your go-to digital companion on your gardening journey, making plant care an enjoyable and rewarding experience.
+
+``````
+AS a plant enthusiast living in Texas
+I WANT a comprehensive online platform
+SO THAT I can easily identify, learn about, and care for various plants
+``````
 
 ## Installation
 
