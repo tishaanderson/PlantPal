@@ -19,3 +19,7 @@ h3 {
   font-size: 40px;
   font-weight:bolder
 } */
+
+main {
+  display: flex;
+}

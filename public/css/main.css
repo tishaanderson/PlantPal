@@ -54,6 +54,7 @@ nav ul li a::after {
 
 
 main {
+  /* display: flex; */
   font-family: 'Playfair Display', serif;
   padding: 1%;
   border-radius: 25px;
