@@ -1,0 +1,31 @@
+.individual-plant {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.individual-plant-pic {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;  
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.text-background {
+  background-color: rgba(182, 249, 141, 0.5);
+  margin: 1%;
+  padding: 1%;
+  border: solid;
+  border-width: 2px;
+  border-color: rgb(173, 134, 83);
+  border-radius: 10px;
+}
