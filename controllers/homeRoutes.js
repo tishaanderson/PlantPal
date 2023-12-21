@@ -43,7 +43,7 @@ router.get('/indoor', async (req, res) => {
   try {
     const plantData = await Plant.findAll({ where: { category: 'Indoor' } });
     const plants = plantData.map((plant) => plant.get({ plain: true }));
-    res.render('indoor', { plants });
+    res.render('indoor', { plants, logged_in: req.session.logged_in });
   } catch (error) {
     res.status(500).json(error);
   }
@@ -54,7 +54,7 @@ router.get('/outdoor', async (req, res) => {
   try {
     const plantData = await Plant.findAll({ where: { category: 'Outdoor' } });
     const plants = plantData.map((plant) => plant.get({ plain: true }));
-    res.render('outdoor', { plants });
+    res.render('outdoor', { plants, logged_in: req.session.logged_in });
   } catch (error) {
     res.status(500).json(error);
   }
@@ -68,7 +68,8 @@ router.get('/profile', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       include: [{
         model: Plant,
-        through: UserPlants
+        through: UserPlants,
+        attributes: ['id', 'plant_name', 'description', 'image_url'],
       }],
     });
 
