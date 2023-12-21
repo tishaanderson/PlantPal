@@ -52,16 +52,45 @@ nav ul li a::after {
 
 
 
+
+main {
+  font-family: 'Playfair Display', serif;
+  padding: 1%;
+  border-radius: 25px;
+  border-color: rgb(173, 134, 83);
+  border-style: dotted;
+  border-width: 7px;
+  margin-top: 0;
+}
+
+
+
 .card-title {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: bolder;
 }
 
+.plant-image {
+  width: 75%;
+  height: 300px;
+  object-fit: cover;
+}
+
+h3 {
+  color: green;
+  font-size: 40px;
+  font-weight:bolder
+}
+
 a {
   color: rgba(216, 144, 72, 0.686);
   font-size: 120%
 }
+
+/* a::hover {
+  color: black;
+} */
 
 footer {
   display: flex;

@@ -1,10 +1,26 @@
-<header>
-    <h1>More about {{plant.plant_name}}</h1>
-</header>
-<a>
-    <img src="{{plant.image_url}}" class="img-fluid rounded-start" alt="{{plant.plant_name}}" />
-</a>
-<p class="card-text">Description: {{plant.description}}</p>
-<p class="card-text">Sunlight Requirements: {{plant.sunlight_requirements}}</p>
-<p class="card-text">Watering Needs: {{plant.watering_needs}}</p>
-<p class="card-text"><small class="text-body-secondary">Category: {{plant.category}}</small></p>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/individual-plant.css">
+
+<h3 class="individual-plant">More about {{plant.plant_name}}::</h3>
+
+<div class="image-container">
+    <img class="individual-plant-pic" src="{{plant.image_url}}"  alt="{{plant.plant_name}}" />   
+</div>
+
+<div class="text-background">
+    <p class="card-text"> <b>Description:</b>  {{plant.description}}</p>   
+</div>
+
+<div class="text-background">
+    <p class="card-text"> <b>Sunlight Requirements:</b>  {{plant.sunlight_requirements}}</p>
+</div>
+
+<div class="text-background">
+    <p class="card-text"> <b>Watering Needs:</b>  {{plant.watering_needs}}</p>
+</div class="text-background">
+
+<div class="text-background">
+    <p class="card-text"> <b>Category:</b> {{plant.category}}</p>
+</div>
+
+
