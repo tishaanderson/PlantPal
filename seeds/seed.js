@@ -2,6 +2,8 @@ const sequelize = require('../config/connection');
 const { Plant } = require('../models');
 const plantData = require('./plants.json');
 
+ 
+
 const seedDatabase = async () => {
   try {
     await sequelize.sync({ force: true });
@@ -10,6 +12,8 @@ const seedDatabase = async () => {
       individualHooks: true,
       returning: true,
     });
+
+    console.log(`${plants.image_file} picture image loaded.`);
 
     console.log(`${plants.length} plants seeded successfully.`);
   } catch (error) {

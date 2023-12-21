@@ -15,6 +15,9 @@ Plant.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    image_filename: {
+      type: DataTypes.STRING, // Assuming image filenames are strings  scn
+    },
     description: {
       type: DataTypes.TEXT,
     },
