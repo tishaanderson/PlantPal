@@ -1,6 +1,7 @@
 [
     {
         "plant_name": "Lantana",
+        "image_filename": "lantana.png",
         "description": "This plant produces clusters of brightly colored flowers that bloom from spring through fall and is available in a variety of colors, including yellow, orange, pink, and purple. Lantana is a low-maintenance plant that requires little water and is an excellent choice for borders, mass plantings, or container gardens.",
         "sunlight_requirements": "Can handle heat and drought, good to leave in the sun.",
         "watering_needs": "Requires little water",
@@ -9,6 +10,7 @@
     },
     {
         "plant_name": "Salvia",
+        "image_filename": "salvia.png",
         "description": "Salvia farinacea is a gorgeous Texas native plant that is easy to grow, attracts hummingbirds and butterflies, and is exceeding drought-tolerant.",
         "sunlight_requirements": "Extremely heat and drought resistant, safe to leave in the sun.",
         "watering_needs": "Requires little watering.",
@@ -17,6 +19,7 @@
     },
     {
         "plant_name": "Rockrose",
+        "image_filename": "rockrose.png",
         "description": "Rockrose can be described as a Texas hibiscus. The deep pink, papery blooms open wide in the morning and close later in the day to keep it protected from the heat. ",
         "sunlight_requirements": "Full sun, partial shade",
         "watering_needs": "Low watering needs",
@@ -25,6 +28,7 @@
     },
     {
         "plant_name": "Texas Sage",
+        "image_filename": "txsage.png",
         "description": "Texas sage is a tough, drought-tolerant plant that produces fragrant purple flowers throughout the summer. This plant requires full sun and well-draining soil and is an excellent choice for a xeriscape garden or as a low hedge or screen.",
         "sunlight_requirements": "Full sun",
         "watering_needs": "Very little",
@@ -33,6 +37,7 @@
     },
     {
         "plant_name": " Autumn Sage",
+        "image_filename": "autumnsage.png",
         "description": "Salvia greggii, this perennial is native to southwest Texas and Mexico. You may have spotted it growing on the side of the highway. The soft shrub has a minty aromatic leaf and grows to about two to three feet tall. Autumn sage blooms in colors like red, purple, orange and white.",
         "sunlight_requirements": "Full sun, partial shade",
         "watering_needs": "Water once a week",
@@ -41,6 +46,7 @@
     }, 
     {
         "plant_name": "Hibiscus",
+        "image_filename": "hibiscus.png",
         "description": "This fantastic plant blooms throughout the year, showing off its stunning flowers throughout the four seasons. Hibiscus plants are very versatile and can be planted in spacious gardens, small window planters, or hanging pots. These plants are known to attract butterflies, bees, and hummingbirds, which is great for pollenating the rest of your blooming garden.",
         "sunlight_requirements": "Full sun, partial shade",
         "watering_needs": "Water once a week",
@@ -49,6 +55,7 @@
     },
     {
         "plant_name": "Cacti and Succulents",
+        "image_filename": "cacti_succulent.png",
         "description": "These plants come in a variety of sizes and shapes, from small and compact to large and sprawling. Some popular varieties for Texas landscaping include barrel cactus, prickly pear cactus, and agave. These plants require little maintenance and can add a unique and striking element to your landscape design.",
         "sunlight_requirements": "Full sun",
         "watering_needs": "Little watering",
