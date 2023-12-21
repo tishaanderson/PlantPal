@@ -30,7 +30,7 @@ UserPlants.init(
     plant_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'plants',
+        model: 'plant',
         key: 'id'
       }
     },

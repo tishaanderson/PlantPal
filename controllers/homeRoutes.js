@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
 
     // Serialize data so the template can read it
     const plants = plantData.map((plant) => plant.get({ plain: true }));
-console.log(plants);
+    console.log(plants);
     // Pass serialized data and session flag into template
     res.render('homepage', { plants });
   } catch (err) {
@@ -22,13 +22,14 @@ router.get('/plant/:id', async (req, res) => {
     const plantData = await Plant.findByPk(req.params.id);
 
     if (!plantData) {
-      res.status(404).json({ message: 'Plant not found'});
+      res.status(404).json({ message: 'Plant not found' });
       return;
     }
 
     const plant = plantData.get({ plain: true });
 
-    res.render('plant',  { plant,
+    res.render('plant', {
+      plant,
       ...plant,
       logged_in: req.session.logged_in
     });
@@ -43,7 +44,10 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: UserPlants }],
+      include: [{
+        model: Plant,
+        through: UserPlants
+      }],
     });
 
     if (!userData) {
