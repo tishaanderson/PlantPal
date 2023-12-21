@@ -4,7 +4,7 @@ const UserPlants = require('./UserPlants')
 
 
 User.belongsToMany(Plant, {
-  foreignKey: 'user_id',
+  foreignKey: 'plant_id',
   through: UserPlants
 });
 
