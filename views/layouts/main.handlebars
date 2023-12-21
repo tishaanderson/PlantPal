@@ -24,8 +24,17 @@
         <a href="/">Home</a>
       </li>
       <li>
+        <a href="/indoor" class="indoor-btn">Indoor</a>
+      </li>
+      <li>
+        <a href="/outdoor" class="outdoor-btn">Outdoor</a>
+      </li>
+
+
+
+      <li>
         {{#if logged_in}}
-        <a href="/profile">My Garden</a>
+        <a href="/profile">My Garden</a> 
         <button class="btn" id="logout">Logout</button>
         {{else}}
         <a href="/login">Login</a>
@@ -52,6 +61,8 @@
   {{/if}}
 
 
+  <script src="./js/indoor.js"></script>
+  <script src="./js/outdoor.js"></script>
 
 </body>
 

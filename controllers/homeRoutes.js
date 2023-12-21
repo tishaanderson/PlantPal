@@ -38,6 +38,28 @@ router.get('/plant/:id', async (req, res) => {
   }
 });
 
+// Gets all Indoor plants to populate on indoor page
+router.get('/indoor', async (req, res) => {
+  try {
+    const plantData = await Plant.findAll({ where: { category: 'Indoor' } });
+    const plants = plantData.map((plant) => plant.get({ plain: true }));
+    res.render('indoor', { plants });
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
+
+// Gets all Outdoor plants to populate on outdoor page
+router.get('/outdoor', async (req, res) => {
+  try {
+    const plantData = await Plant.findAll({ where: { category: 'Outdoor' } });
+    const plants = plantData.map((plant) => plant.get({ plain: true }));
+    res.render('outdoor', { plants });
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
+
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
