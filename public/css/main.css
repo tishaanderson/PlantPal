@@ -108,3 +108,30 @@ footer {
   margin-top: -10px;
   margin-left: 70px;
 }
+
+/* Common styles for all screen sizes */
+.card {
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+}
+
+/* Media query for tablets (e.g., iPad) */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Make cards full-width on smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+  }
+}
+
+/* Media query for smartphones */
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+}
