@@ -1,25 +1,7 @@
-/* main {
-  font-family: 'Playfair Display', serif;
-  padding: 1%;
-  border-radius: 25px;
-  border-color: rgb(173, 134, 83);
-  border-style: dotted;
-  border-width: 7px;
-  margin-top: 0;
-} */
-
-/* .plant-image {
-  width: 75%;
-  height: 300px;
-  object-fit: cover;
-}
-
-h3 {
-  color: green;
-  font-size: 40px;
-  font-weight:bolder
-} */
-
 main {
   display: flex;
+}
+
+img {
+  border-radius: 10px;
 }
