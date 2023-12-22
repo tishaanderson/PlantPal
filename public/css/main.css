@@ -101,3 +101,10 @@ footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 20px;
 }
+
+.btn {
+  color: rgba(216, 144, 72, 0.686);
+  font-size: 115%;
+  margin-top: -10px;
+  margin-left: 70px;
+}
