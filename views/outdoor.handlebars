@@ -1,26 +1,14 @@
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/individual-plant.css">
+<h1 style="font-size: 50px; border-bottom: dotted 2px rgb(173, 134, 83); margin-bottom: 20px">Outdoor Plants::</h1>
 
-<body>
-
-  <header>
-    <h1>Outdoor Plants</h1>
-  </header>
-
-  <main class="container">
-    <div class="row">
-      {{#each plants as |plant|}}
-        <div class="col-md-6 col-sm-12">
-          <div class="card mb-3">
-            <div class="card-body">
-              <h5 class="card-title">{{plant.plant_name}}</h5>
-              <a href="/plant/{{plant.id}}">
-                <img src="/images/{{plant.image_filename}}" class="img-fluid rounded-start" alt="{{plant.plant_name}}" />
-              </a>
-            </div>
-          </div>
-        </div>
-      {{/each}}
+<div class="row">
+  {{#each plants as |plant|}}
+    <div class="col-md-6 col-sm-12">
+      <div class="plant-container" >
+        <h3 class="plant-title" style="text-align: center;">{{plant.plant_name}}</h3>
+        <a href="/plant/{{plant.id}}" style="display: flex; align-items: center; justify-content: center;" >
+         <img style="border-radius: 10px;" src="/images/{{plant.image_filename}}" class="img-fluid plant-image" alt="{{plant.plant_name}}"/>
+        </a>
+      </div>
     </div>
-  </main>
-</body>
+  {{/each}}
+</div>
