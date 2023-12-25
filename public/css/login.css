@@ -1,4 +1,4 @@
-main {
+/* main {
   display: flex;
 }
 
@@ -8,8 +8,8 @@ main {
   border-width: 2px;
   border-color: rgb(173, 134, 83);
   border-radius: 10px;
-  width: 65%;
-  height: 65vh;
+  width: auto;
+  height: auto;
 }
 
 .form {
@@ -38,4 +38,38 @@ h3 {
 
 .OR {
   margin-top: 250px;
+} */
+
+.form-container {
+  border: solid;
+  border-color: rgb(173, 134, 83);
+  border-radius: 10px;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: auto;
+  height: auto;
+}
+
+.form {
+  display: block;
+  justify-content: center;
+  margin-top: 30px;
+  /* margin-bottom: 30px; */
+  /* margin: 10px; */
+  /* width: auto;
+  height: auto; */
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.OR {
+  text-align: center;
+}
+
+.form-title {
+  margin-top: 5%;
 }
